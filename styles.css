@@ -1,0 +1,92 @@
+/* Import the SF Pro font directly */
+@font-face {
+    font-family: 'SF Pro';
+    src: url('/Users/bph/aboutsite/SF-Pro.ttf') format('truetype'); /* Modern Browsers */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    max-width: 800px; /* Set a maximum width for the page */
+    margin: 0 auto; /* Center the page horizontally */
+    padding: 0 2em; /* Adjust the padding as needed */
+    background-color: #0d0d0d;
+    color: #fff;
+}
+
+header {
+    color: #fff;
+    text-align: center;
+    padding: 5em 0 2em;
+    
+}
+.desc {
+    font-size: 14px; /* Adjust the font size as needed */
+    max-width: 400px; /* Set a maximum width for the paragraphs */
+    margin: 0 auto; /* Center the paragraphs within the container */
+    color: #d1d1d1;
+}
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 0;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+h2 {
+    color: #fff;
+}
+
+.project {
+    margin-bottom: 1em;
+}
+
+footer {
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #ffc31f; /* Yellow color */
+    font-weight: bold;
+    text-decoration: none; /* Remove the default underline */
+}
+/* Add these styles to your existing styles.css or in the head of your HTML file */
+
+#datetime, #temperature {
+    color: #fff; /* White color */
+    font-size: 18px; /* Adjust the font size as needed */
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+#pi {
+    max-width: 400px;
+    max-height: 400px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Crop the image to cover the container */
+    border-radius: 15px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+
+/* Your CSS file */
+#coordinates {
+    font-size: 12px; /* Adjust the font size as needed */
+    margin-top: 10px; /* Add space on top of the coordinates */
+    color: #d1d1d1;
+}
