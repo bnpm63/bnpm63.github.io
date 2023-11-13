@@ -3,7 +3,7 @@ fetch('http://api.weatherstack.com/current?access_key=6b1b30f702c108538c8e8ce7b1
   .then(data => {
 
     const temperature = data.current.temperature;
-    const temperatureFahrenheit = (temperature * 9/5) + 32;
+    const temperatureFahrenheit = (temperature * 9/5) + 33;
     const temperatureFahrenheitTruncated = Math.trunc(temperatureFahrenheit);
 
 
