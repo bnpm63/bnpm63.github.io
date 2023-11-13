@@ -1,7 +1,6 @@
-/* Import the SF Pro font directly */
 @font-face {
     font-family: 'SF Pro';
-    src: url('/Users/bph/aboutsite/SF-Pro.ttf') format('truetype'); /* Modern Browsers */
+    src: url('/Users/bph/aboutsite/SF-Pro.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -9,25 +8,42 @@
 body {
     font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    max-width: 800px; /* Set a maximum width for the page */
-    margin: 0 auto; /* Center the page horizontally */
-    padding: 0 2em; /* Adjust the padding as needed */
-    background-color: #0d0d0d;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2em;
+    padding-bottom: 70px;
+    background-color: #171717;
     color: #fff;
 }
 
 header {
     color: #fff;
     text-align: center;
-    padding: 5em 0 2em;
-    
+    padding: 0em 0 2em;
 }
-.desc {
-    font-size: 14px; /* Adjust the font size as needed */
-    max-width: 400px; /* Set a maximum width for the paragraphs */
-    margin: 0 auto; /* Center the paragraphs within the container */
+
+header.main h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+
+#listening-to {
+    font-size: 1.2em;
+    color: #d1d1d1;
+    margin-bottom: 5px;
+}
+
+#spotify{
     color: #d1d1d1;
 }
+
+.desc {
+    font-size: 14px;
+    max-width: 400px;
+    margin: 0 auto;
+    color: #d1d1d1;
+}
+
 header h1 {
     margin: 0;
     font-size: 2.5em;
@@ -60,16 +76,14 @@ footer {
 }
 
 a {
-    color: #ffc31f; /* Yellow color */
+    color: #ffc31f;
     font-weight: bold;
-    text-decoration: none; /* Remove the default underline */
+    text-decoration: none;
 }
-/* Add these styles to your existing styles.css or in the head of your HTML file */
 
 #datetime, #temperature {
-    color: #fff; /* White color */
-    font-size: 18px; /* Adjust the font size as needed */
-    margin-bottom: 10px; /* Adjust the margin as needed */
+    color: #fff;
+    font-size: 18px;
 }
 
 #pi {
@@ -77,16 +91,44 @@ a {
     max-height: 400px;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Crop the image to cover the container */
+    object-fit: cover;
     border-radius: 15px;
     margin-bottom: 10px;
     margin-top: 20px;
+    padding: 20px;
 }
 
-
-/* Your CSS file */
 #coordinates {
-    font-size: 12px; /* Adjust the font size as needed */
-    margin-top: 10px; /* Add space on top of the coordinates */
+    font-size: 12px;
+    margin-top: 10px;
     color: #d1d1d1;
+}
+
+#floating-navbar {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    padding: 15px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+#floating-navbar a {
+    color: #808080;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+#floating-navbar a:hover {
+    color: #fff;
+    background-color: transparent;
 }
