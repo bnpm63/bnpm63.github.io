@@ -6,8 +6,7 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     max-width: 800px;
     margin: 0 auto;
     padding: 0 2em;
@@ -19,7 +18,7 @@ body {
 header {
     color: #fff;
     text-align: center;
-    padding: 0em 0 2em;
+    padding: 0em 0em 2em;
 }
 
 header.main h1 {
@@ -33,64 +32,50 @@ header.main h1 {
     margin-bottom: 5px;
 }
 
-#spotify{
+#spotify {
     color: #d1d1d1;
+    padding-top: 5em;
 }
 
 .desc {
     font-size: 14px;
     color: #d1d1d1;
-    
 }
 
 .project {
     display: flex;
-    font-size: 14px;
     flex-direction: column;
     align-items: flex-start;
+    font-size: 14px;
     color: #d1d1d1;
     margin-top: 0.5em;
     text-align: left;
     background-color: #000;
-    color: #fff;
     padding: 15px;
-    margin: 10px auto; /* Center the boxes horizontally */
+    margin: 10px auto;
     border-radius: 15px;
-    max-width: 600px; /* Set a maximum width as needed */
+    max-width: 600px;
 }
 
-  
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
 
 header p {
     margin: 0;
 }
 
 section {
-    padding: 2em;
+    padding-top: 2em;
+    padding-bottom: 0;
     text-align: center;
 }
-/* Add this to your existing CSS or in a new CSS file */
+
 .github-button img {
-    filter: grayscale(100%); /* Make the image grey */
+    filter: grayscale(100%);
 }
 
 h2 {
     color: #fff;
     font-size: xx-large;
-    /* position: relative;
-    display: inline-block;
-    padding: 0.3em 0.8em; 
-    background-color: rgba(255, 255, 255, 0); 
-    border: 1px solid #fff; 
-    border-radius: 30px; 
-    margin: 10px 0; 
-    font-weight: bold; Make the font slightly more bold */
 }
-
 
 h3 {
     color: #fff;
@@ -98,21 +83,18 @@ h3 {
     font-weight: normal;
     margin-bottom: 0.4em;
     margin-top: 0.5em;
-    
 }
-
 
 .project {
     margin-bottom: 0.5em;
-    background-color: #121212;
+    background-color: #171717;
     color: #fff;
     padding: 15px;
-    margin: 10px auto; /* Center the boxes horizontally */
+    margin: 10px auto;
     border-radius: 15px;
     max-width: 500px;
 }
 
-  
 footer {
     color: #fff;
     text-align: center;
@@ -128,14 +110,11 @@ a {
     text-decoration: none;
 }
 
-#datetime, #temperature {
+#datetime,
+#temperature {
     color: #fff;
     font-size: 18px;
 }
-
-/* Existing styles */
-
-/* Existing styles */
 
 #pi {
     max-width: 400px;
@@ -143,22 +122,18 @@ a {
     width: 100%;
     height: auto;
     object-fit: cover;
-    border-radius: 15px; /* Rounded corners */
+    border-radius: 15px;
     margin-bottom: 10px;
     margin-top: 20px;
     padding: 20px;
-    box-sizing: border-box; /* Include padding in the element's total width and height */
+    box-sizing: border-box;
 }
 
-/* Add this media query to adjust the padding on smaller screens */
 @media (max-width: 600px) {
     #pi {
-        padding: 10px; /* Adjust padding as needed on smaller screens */
+        padding: 10px;
     }
 }
-
-
-
 
 #coordinates {
     font-size: 12px;
@@ -168,7 +143,7 @@ a {
 
 #floating-navbar {
     position: fixed;
-    bottom: 20px;
+    top: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 90%;
@@ -177,6 +152,8 @@ a {
     justify-content: space-around;
     background-color: rgba(41, 41, 41, 0.5);
     backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px); /* Add this line first, it fixes blur for Safari*/
+    backdrop-filter: blur(5px);  /* This line activates blur*/
     padding: 15px 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
     border-radius: 15px;

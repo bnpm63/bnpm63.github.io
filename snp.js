@@ -36,7 +36,7 @@ fetch('http://api.weatherstack.com/current?access_key=6b1b30f702c108538c8e8ce7b1
 });
 
 
-const apiKey = 'a539d21daf6147cbbfc6a47b23ab49a6';
+const apiKey = '8a91bc0f8dba47cfb5d76998b0073c83';
 const apiUrl = 'https://api.spotify.com/v1/me/player/currently-playing';
 
 async function getSpotifySong() {
