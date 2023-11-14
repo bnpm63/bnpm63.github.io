@@ -12,7 +12,7 @@ body {
     margin: 0 auto;
     padding: 0 2em;
     padding-bottom: 70px;
-    background-color: #171717;
+    background-color: #000;
     color: #fff;
 }
 
@@ -39,11 +39,27 @@ header.main h1 {
 
 .desc {
     font-size: 14px;
-    max-width: 400px;
-    margin: 0 auto;
     color: #d1d1d1;
+    
 }
 
+.project {
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #d1d1d1;
+    margin-top: 0.5em;
+    text-align: left;
+    background-color: #000;
+    color: #fff;
+    padding: 15px;
+    margin: 10px auto; /* Center the boxes horizontally */
+    border-radius: 15px;
+    max-width: 600px; /* Set a maximum width as needed */
+}
+
+  
 header h1 {
     margin: 0;
     font-size: 2.5em;
@@ -57,21 +73,46 @@ section {
     padding: 2em;
     text-align: center;
 }
+/* Add this to your existing CSS or in a new CSS file */
+.github-button img {
+    filter: grayscale(100%); /* Make the image grey */
+}
 
 h2 {
     color: #fff;
+    font-size: xx-large;
+    /* position: relative;
+    display: inline-block;
+    padding: 0.3em 0.8em; 
+    background-color: rgba(255, 255, 255, 0); 
+    border: 1px solid #fff; 
+    border-radius: 30px; 
+    margin: 10px 0; 
+    font-weight: bold; Make the font slightly more bold */
 }
+
 
 h3 {
     color: #fff;
     font: BlinkMacSystemFont;
     font-weight: normal;
+    margin-bottom: 0.4em;
+    margin-top: 0.5em;
+    
 }
+
 
 .project {
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
+    background-color: #121212;
+    color: #fff;
+    padding: 15px;
+    margin: 10px auto; /* Center the boxes horizontally */
+    border-radius: 15px;
+    max-width: 500px;
 }
 
+  
 footer {
     color: #fff;
     text-align: center;
@@ -134,7 +175,7 @@ a {
     max-width: 800px;
     display: flex;
     justify-content: space-around;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(41, 41, 41, 0.5);
     backdrop-filter: blur(5px);
     padding: 15px 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
